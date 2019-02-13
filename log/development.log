@@ -1638,3 +1638,286 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 17:33:28 -0500
+Started GET "/" for 127.0.0.1 at 2019-02-13 00:51:43 -0500
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.0.7.1/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 648ms (Views: 625.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-02-13 00:51:44 -0500
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-02-13 00:51:44 -0500
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:51:53 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkbX0FrV8lt+jvMnht6yaOYnJjECXWGcb4/IIbsmNlPbZJxyYp+p6cGnXMfs7kOEm/mbKs+oQc7QZtYnUia2xQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 2801ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `body' for #<FoursquareService:0x00007f62256de4b0>):
+  
+app/service/foursquare_service.rb:34:in `searchVenues'
+app/controllers/searches_controller.rb:13:in `foursquare'
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (272.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_dowpm__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb___4407566304290785572_70029748792720 at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (270.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (363.5ms)
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OkbX0FrV8lt+jvMnht6yaOYnJjECXWGcb4/IIbsmNlPbZJxyYp+p6cGnXMfs7kOEm/mbKs+oQc7QZtYnUia2xQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 535ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-02-13 00:52:18 -0500
+Started POST "/tips" for 127.0.0.1 at 2019-02-13 00:52:26 -0500
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AazAGvT0Yc7Z4GqBh2b7WZYahyNSQDpaVHkGMeQHkejgjou4zL46fGbJxWHtVgq168Q6OJ+1GgjrkBg3DQcRfg==", "venue_id"=>"4b70bcb1f964a520462c2de3", "tip"=>"love it", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 330ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for 127.0.0.1 at 2019-02-13 00:52:27 -0500
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 458ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for 127.0.0.1 at 2019-02-13 00:52:37 -0500
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AazAGvT0Yc7Z4GqBh2b7WZYahyNSQDpaVHkGMeQHkejgjou4zL46fGbJxWHtVgq168Q6OJ+1GgjrkBg3DQcRfg==", "venue_id"=>"4b135fdbf964a520b49623e3", "tip"=>"love it", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 450ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for 127.0.0.1 at 2019-02-13 00:52:38 -0500
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 424ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tips" for 127.0.0.1 at 2019-02-13 00:52:45 -0500
+Processing by TipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AazAGvT0Yc7Z4GqBh2b7WZYahyNSQDpaVHkGMeQHkejgjou4zL46fGbJxWHtVgq168Q6OJ+1GgjrkBg3DQcRfg==", "venue_id"=>"5accadfd286fda256e77dc08", "tip"=>"love it", "commit"=>"Add Tip"}
+Redirected to http://localhost:3000/tips
+Completed 302 Found in 355ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tips" for 127.0.0.1 at 2019-02-13 00:52:45 -0500
+Processing by TipsController#index as HTML
+  Rendering tips/index.html.erb within layouts/application
+  Rendered tips/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 420ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:54:21 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AazAGvT0Yc7Z4GqBh2b7WZYahyNSQDpaVHkGMeQHkejgjou4zL46fGbJxWHtVgq168Q6OJ+1GgjrkBg3DQcRfg==", "zipcode"=>"", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 532ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:54:29 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zYSf5n9+JRfdcoA+MFkb6iRK6pZ5GpO0mDThA2qSa/MsptRERzR+pWJbL95aaeoGWZRXjbTvs+Yn3f8Fg5LrZQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 674ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:55:02 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BVD5f+pr1dN401RMGZi++GEMyQFNsavhDZ2LdklPC+rkcrLd0iGOYcf6+6xzqE8UHNJ0GoBEi7OydJVwoE+LfA==", "zipcode"=>"", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 488ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:55:06 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JwQHFUwbVGIId+Y5IJYzqJ+X/8AtRrN5yrWv4VEoUT/GJky3dFEP0LdeSdlKpsJE4klC2+Czkyt1XLHnuCjRqQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 791ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:55:14 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yGbeQSv7giS0NivgvPfoQULe+fGAKGQWb005gCOCnIWA9DbPOW1ui35d0/owy5NeNXG/Av1gcLmVCrg6Y6K5A==", "zipcode"=>"", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Net::OpenTimeout):
+  
+app/service/foursquare_service.rb:24:in `searchVenues'
+app/controllers/searches_controller.rb:13:in `foursquare'
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_dowpm__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb___4407566304290785572_70029766121740 at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.0ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.4ms)
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:56:12 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yGbeQSv7giS0NivgvPfoQULe+fGAKGQWb005gCOCnIWA9DbPOW1ui35d0/owy5NeNXG/Av1gcLmVCrg6Y6K5A==", "zipcode"=>"", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 454ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Net::OpenTimeout):
+  
+app/service/foursquare_service.rb:25:in `searchVenues'
+app/controllers/searches_controller.rb:13:in `foursquare'
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.9ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_dowpm__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb___4407566304290785572_70029753558320 at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.6ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (175.5ms)
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:56:27 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yGbeQSv7giS0NivgvPfoQULe+fGAKGQWb005gCOCnIWA9DbPOW1ui35d0/owy5NeNXG/Av1gcLmVCrg6Y6K5A==", "zipcode"=>"", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 339ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-02-13 00:56:28 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-02-13 00:56:28 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-02-13 00:56:28 -0500
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-02-13 00:56:28 -0500
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-02-13 00:56:28 -0500
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:56:36 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eRLG3SQZPqWFVb414UEgIY1TFSWLZ1X0KGzQfoBAiROYMI1/HFNlFzp8EdWLcdHN8I2oPkaSdaaXhc54aUAJhQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Net::OpenTimeout):
+  
+app/service/foursquare_service.rb:25:in `searchVenues'
+app/controllers/searches_controller.rb:13:in `foursquare'
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from __home_dowpm__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb___4407566304290785572_70029763517060 at /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.8ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/dowpm/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.4ms)
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eRLG3SQZPqWFVb414UEgIY1TFSWLZ1X0KGzQfoBAiROYMI1/HFNlFzp8EdWLcdHN8I2oPkaSdaaXhc54aUAJhQ==", "zipcode"=>"chicago", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 290ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-02-13 00:57:54 -0500
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:58:13 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0nlCTUvBWDcBJJf8++qkijPy2aQFowxB+IGHjI1HQ20zWwnvc4sDhb4NOByR2lVmTixkv8hWLBNHaJmKZEfD+w==", "zipcode"=>"23", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 187ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for 127.0.0.1 at 2019-02-13 00:58:17 -0500
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pokbwFjanoyRtAl38kW1p0dVnIZoEH43eYN7qlnKr0/uG/NOSkxyI1vf8W1+ec64MPradRVYapiDxPoQGeqKw==", "zipcode"=>"chicago", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 138ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
