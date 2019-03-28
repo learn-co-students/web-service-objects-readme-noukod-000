@@ -37,4 +37,12 @@ class SearchesController < ApplicationController
       @error = "There was a timeout. Please try again."
       render 'search'
   end
+
+  # searches_controller.rb
+  # ...
+    def friends
+      foursquare = FoursquareService.new
+      @friends = foursquare.friends(session[:token])
+    end
+
 end
